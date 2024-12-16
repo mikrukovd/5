@@ -30,9 +30,9 @@ def main():
         'Э': 'Э͒͠͠', 'Ю': 'Ю̋͠', 'Я': 'Я̋',
         ' ': ' '
     }
-    skills = ["Удар кулаком", "Удар молнией", "Удар огнем", "Ледяная ловушка"]
-    fake = Faker("ru_RU")
-    svg = "svg/5.svg"
+    skills = ['Удар кулаком', 'Удар молнией', 'Удар огнем', 'Ледяная ловушка']
+    fake = Faker('ru_RU')
+    svg = 'svg/5.svg'
     os.makedirs('result')
     runic_skills = []
     for skill in skills:
@@ -53,20 +53,20 @@ def main():
         luck = random.randint(3, 18)
         skill_1, skill_2, skill_3 = random.sample(runic_skills, 3)
         context = {
-            "first_name": first_name,
-            "last_name": last_name,
-            "job": job,
-            "town": town,
-            "strength": strength,
-            "agility": agility,
-            "endurance": endurance,
-            "intelligence": intelligence,
-            "luck": luck,
-            "skill_1": skill_1,
-            "skill_2": skill_2,
-            "skill_3": skill_3
+            'first_name': first_name,
+            'last_name': last_name,
+            'job': job,
+            'town': town,
+            'strength': strength,
+            'agility': agility,
+            'endurance': endurance,
+            'intelligence': intelligence,
+            'luck': luck,
+            'skill_1': skill_1,
+            'skill_2': skill_2,
+            'skill_3': skill_3
         }
-        result = "result/result_{i}.svg".format(i=i)
+        result = 'result/result_{i}.svg'.format(i=i)
         file_operations.render_template(svg, result, context)
 
 
