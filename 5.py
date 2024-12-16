@@ -35,11 +35,12 @@ def main():
     skills = ["Удар кулаком", "Удар молнией", "Удар огнем", "Ледяная ловушка"]
 
     runic_skills = []
-    for letter in skills:
+    
+    for skill in skills:
         text_letter = ''
-        for let in letters:
-            let = letters[let]
-            text_letter += let
+        for s in skill:
+            s = letters[s]
+            text_letter += s
         runic_skills.append(text_letter)
 
     if not os.path.exists('result'):
