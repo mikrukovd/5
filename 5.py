@@ -31,7 +31,7 @@ def main():
     'Ъ': 'Ъ̋͠', 'Ы': 'Ы̋͠', 'Ь': 'Ь̋',
     'Э': 'Э͒͠͠', 'Ю': 'Ю̋͠', 'Я': 'Я̋',
     ' ': ' '
-}
+    }
     skills = ["Удар кулаком", "Удар молнией", "Удар огнем", "Ледяная ловушка"]
 
     runic_skills = []
@@ -73,7 +73,7 @@ def main():
         "skill_1": skill_1,
         "skill_2": skill_2,
         "skill_3": skill_3
-}
+        }
         file_operations.render_template("svg/5.svg", "result/result_{i}.svg".format(i=i), context)
 
 
