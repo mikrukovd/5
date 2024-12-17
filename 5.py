@@ -79,7 +79,7 @@ def main():
         'Удар молнией',
         'Удар огнем',
         'Ледяная ловушка'
-        ]
+    ]
     fake = Faker('ru_RU')
     svg = 'svg/5.svg'
     os.makedirs('result')
